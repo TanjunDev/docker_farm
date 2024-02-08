@@ -1,21 +1,18 @@
 version: "3.9"
 
 services:
-  # EFLOW WMS
   web_page_service:
     image: tanjundev/web_page:latest
     container_name: web_page_container
     ports:
       - "8080:80"
 
-  # Authentication
   web_api_service:
     image: tanjundev/web_api:latest
     container_name: web_api_container
     ports:
       - "8081:80"
 
-  # Configuration
   worker_service:
     image: tanjundev/worker_service:latest
     container_name: worker_service_container
